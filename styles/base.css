@@ -3,7 +3,7 @@
  margin: 0;
  box-sizing: border-box;
 }
-.course-title {
+#course-title {
   display: block;
   font-size: 1.3rem;
   font-weight: bold;
@@ -65,12 +65,15 @@ h2 {
  text-align: center;
 }
 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  align-items: center;
+  gap: 0.1rem;
   background: white;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
 .card img {
   width: 250px;
   height: 250px;
@@ -84,12 +87,6 @@ h2 {
 }
 figcaption {
 margin-left: 20px;  /*Aligning the flag caption to the center of the image*/
-}
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
-  align-items: center;
-  gap: 0.1rem;
 }
 
 footer {
