@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+ background-color: black;
+ padding: 10px 0;
+}
+.navigation {
+  display: flex;
+ list-style: none
+}
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    display: block;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+h1 {
+  background-color: rgba(55, 55, 55, 0.874);
+  color: white;
+  padding: 40px 0;
+}
+.bod {
+  display: flex;
+  flex: 1;
+}
+.bod main {
+    flex: 3;
+    padding: 1rem;
+    background-color: rgba(146, 145, 145, 0.874);
+    color: white;
+}
+.bod aside {
+  flex: 1;
+  background-color: white;
+  padding: 1rem;
+}
+.bod main, .bod aside {
+  min-height: 400px;
+}
+
+footer {
+text-align: center;
+background-color: rgba(55, 55, 55, 0.874);
+color: white;
+padding: 50px 0;
+}
