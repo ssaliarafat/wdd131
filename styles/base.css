@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+ margin: 0;
+ box-sizing: border-box;
+}
+.course-title {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+nav {
+ background-color: black;
+ padding: 15px 0;
+}
+.navigation {
+  display: flex;
+ list-style: none
+}
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    display: block;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #005fa3;
+  color: white;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+h1 {
+ background-color: #005fa3;
+ padding: 15px 0;
+ color: white;
+ text-align: center;
+}
+h2 {
+ padding: 15px 0;
+ text-align: center;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+/*This flips the order of the columns */
+.card-right {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl; 
+}
+figcaption {
+margin-left: 20px;  /*Aligning the flag caption to the center of the image*/
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  align-items: center;
+  gap: 0.1rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #eee;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
