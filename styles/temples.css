@@ -2,7 +2,7 @@
   --bg: #f7f7fb;
   --card: #ffffff;
   --text: #222;
-  font-family: 'Inter', system-ui, -apple-system, Arial, sans-serif;
+ font-family: 'Poppins', sans-serif;
 }
 
 * {box-sizing: border-box;}
@@ -94,7 +94,7 @@ body {
   margin: 1rem auto;
   padding: .5rem;
  }
-h1 {
+h2 {
   font-size: 35px;
    color:var(--accent);
    margin-bottom:.65rem;
