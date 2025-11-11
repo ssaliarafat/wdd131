@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Ssali Arafat | My Home page featuring course work, projects and personal information">
+    <meta name="author" content="Ssali Arafat">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+
+      <!-- Hamburger button which will be visible on small screens -->
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <h1 class="brand">Temple Album</h1>
+          
+      <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+               <li><a href="#" title="Home">Home</a></li>
+               <li><a href="#" title="Old">Old</a></li>
+               <li><a href="#" title="New">New</a></li>
+               <li><a href="#" title="Large">Large</a></li>
+               <li><a href="#" title="Small">Small</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+     <main class="container" id="main">
+    <h1>Home</h1>
+    <section class="gallery" id="gallery">
+       <figure class="item">
+        <img src="images/image1.jpg" alt="Name of Temple 1" loading="lazy">
+        <figcaption>Rome, Italy</figcaption>
+      </figure>
+
+      <figure class="item">
+        <img src="images/image2 richmond.jpg" alt="Name of Temple 2" loading="lazy">
+        <figcaption>Richmond, USA</figcaption>
+      </figure>
+       <figure class="item">
+        <img src="images/image3.jpg" alt="Name of Temple 1" loading="lazy">
+        <figcaption>Sydney, Australia</figcaption>
+      </figure>
+
+      <figure class="item">
+        <img src="images/image4.jpg" alt="Name of Temple 2" loading="lazy">
+        <figcaption>Paris, France</figcaption>
+      </figure>
+       <figure class="item">
+        <img src="images/image5.jpg" alt="Name of Temple 1" loading="lazy">
+        <figcaption>Bangkok, Thailand</figcaption>
+      </figure>
+
+      <figure class="item">
+        <img src="images/image6.jpg" alt="Name of Temple 2" loading="lazy">
+        <figcaption>Rio de Janeiro, Brazil</figcaption>
+      </figure>
+       <figure class="item">
+        <img src="images/image7.jpg" alt="Name of Temple 1" loading="lazy">
+        <figcaption>Catalonia, Spain</figcaption>
+      </figure>
+
+      <figure class="item">
+        <img src="images/image8.jpg" alt="Name of Temple 2" loading="lazy">
+        <figcaption>Vancouver, Canada</figcaption>
+      </figure>
+       <figure class="item">
+        <img src="images/image9.jpg" alt="Name of Temple 1" loading="lazy">
+        <figcaption>Kyoto, Japan</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Ssali Arafat | Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
