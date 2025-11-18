@@ -1,0 +1,138 @@
+:root {
+  --main-bg: #d31a1a; /* change later to match country colors */
+  --text-color: #111;
+  --accent: #ffcd00;
+}
+
+body {
+  font-family: Arial;
+  background-color: #ffcd00;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+header {
+  background: var(--main-bg);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: larger;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+/* MAIN GRID - DESKTOP LAYOUT */
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* COUNTRY DATA SECTION */
+.data {
+  background: var(--light-bg);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* WEATHER SECTION */
+.weather {
+  padding: 1rem;
+  background: #f4f4f4;
+}
+
+.weather-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.mobile-icon {
+  width: 60px;
+}
+
+/* DESKTOP VIEW — add emoji using pseudo-element */
+@media (min-width: 700px) {
+
+  main {
+    position: relative;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+
+  /* HERO IMAGE BEHIND */
+  .hero {
+    grid-column: 1 / -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    background-color: #ffcd00;
+    color: black;
+    padding: 1rem;
+  }
+
+  /* SECTIONS MUST BE RELATIVE (NOT ABSOLUTE) */
+  .data, .weather {
+    position: relative;
+    z-index: 2; /* appear on top of hero */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(3px);
+    max-width: 320px;     /* makes each box smaller */
+    width: 100%;  
+  }
+
+  /* LEFT SECTION */
+  .data {
+    grid-column: 1 / 2;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    justify-self: start;
+  }
+
+  /* RIGHT SECTION LOWER */
+  .weather {
+    grid-column: 2 / 3;  
+    justify-self: end;
+    margin-top: 6rem; /* moves it down like wireframe */
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    max-width: 240px; 
+  }
+
+  /* Weather emoji */
+  .weather h2::after {
+    content: " ⛅";
+    margin-left: 8px;
+    font-size: 2rem;
+  }
+
+  .mobile-icon {
+    display: none;
+  }
+}
+
+
+footer {
+  text-align: center;
+  font-size: medium;
+  background: var(--main-bg);
+  padding: 1rem;
+  margin-top: 2rem;
+  color: white;
+}

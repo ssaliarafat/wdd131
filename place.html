@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Ssali Arafat | My country html page for week03 course work project">
+    <meta name="author" content="Ssali Arafat">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda - Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+       <h1>Uganda</h1>
+    </header>
+     <main>
+    <section class="hero">
+      <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+      <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+      <img src="images/hero-small.webp" alt="Nice scenery of Uganda and its people" width="1500" height="750">
+    </picture>
+    </section>
+
+      <section class="data">
+    <h2>Data</h2>
+
+    <ul>
+      <li><strong>Area:</strong> 241,038 km²</li>
+      <li><strong>Population:</strong> 49 million</li>
+      <li><strong>Capital:</strong> Kampala</li>
+      <li><strong>Languages:</strong> English, Luganda, Swahili</li>
+      <li><strong>Currency:</strong> Ugandan Shilling (UGX)</li>
+      <li><strong>Timezone:</strong> EAT (UTC+3)</li>
+      <li><strong>Calling Code:</strong> +256</li>
+      <li><strong>Internet TLD:</strong> .ug</li>
+    </ul>
+  </section>
+
+    <section class="weather">
+     <h2>Weather <span class="weather-icon"></span></h2>
+    <div class="weather-card">
+      <img src="images/weather.svg" class="mobile-icon" alt="Weather icon">
+
+      <p>Temperature: <span id="temp">18</span>°C</p>
+      <p>Conditions: Partly Cloudy</p>
+      <p>Wind: <span id="speed">10</span> km/h</p>
+      <p>Wind Chill: <span id="windchill"></span></p>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Ssali Arafat | Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
