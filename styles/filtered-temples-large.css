@@ -1,0 +1,43 @@
+/* My breakpoint of roughly 600px which is 47.5em and up */
+@media (min-width: 37.5em) {
+  .header-inner {
+     padding: 1.5rem;
+     }
+  .hamburger {               /* hiding hamburger on larger screens */
+    display: none;
+   }                  
+
+  /* Show navigation inline */
+  .site-nav {
+    position: static;
+    display: block !important;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .nav-list {
+    flex-direction: row;
+    gap: 1rem;
+    align-items:center;
+   }
+  .nav-list a {
+    padding:.45rem .75rem;
+    color: aqua;
+    font-weight: bolder;
+  }
+   
+
+  /* My Gallery, the multi-column grid for larger screens */
+  .gallery { 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 1rem;
+  }
+  .item { 
+    display:flex;
+    flex-direction:column;
+   }
+  .item img {
+    height: 160px;
+    object-fit: cover;
+   }
+}

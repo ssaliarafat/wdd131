@@ -1,0 +1,132 @@
+:root{
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --text: #222;
+ font-family: 'Poppins', sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.4;
+}
+
+/* Header */
+.site-header {
+  background-color: #005fa3;
+  color: white;
+  text-align: center;
+  top:0;
+}
+.header-inner {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: .5rem;
+  padding: .95rem;
+  max-width:1100px;
+  margin:0 auto;
+}
+.brand {
+  font-size:1.45rem; 
+   color: white;
+ }
+
+/* Hamburger */
+.hamburger {
+  background: none;
+  border: 0;
+  font-size:1.6rem;
+  cursor: pointer;
+  padding: .25rem .5rem;
+  display: inline-flex;
+  align-items: center;
+}
+.hamburger:focus { 
+  outline: 3px solid rgba(27,108,168,.2);
+  border-radius:4px;
+   }
+
+/* Navigation for mobile, hidden by default */
+.site-nav {
+  position: absolute;
+  top: 60px; 
+  right: 0rem;
+  left: 0rem;
+  background: #005fa3;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  display: none; 
+  padding: .5rem;
+}
+/* Show nav when hamburger menu is open */
+.site-nav.open {
+  display: block;
+}
+
+
+/* Navigation */
+.nav-list { 
+ list-style:none;
+   margin:0;
+   padding:0;
+   display:flex;
+   flex-direction:column;
+   gap:.25rem;
+ }
+.nav-list a {
+  display:block;
+  padding:.65rem .75rem;
+  text-decoration:none;
+  border-radius:6px;
+}
+.nav-list a:hover, .nav-list a:focus { 
+  color: white;
+  font-weight:600;
+ }
+
+/* main content */
+h2 {
+  font-size: 35px;
+   color:var(--accent);
+   margin-bottom:.65rem;
+   text-align:center;
+   }
+
+/* Temples */
+#temple-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+nav button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #eee;
+  padding: 1.0rem;
+  font-size: 1.0rem;
+}
+
