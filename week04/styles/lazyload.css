@@ -1,0 +1,38 @@
+/* Center everything */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* One column images */
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Fade from black animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
