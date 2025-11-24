@@ -161,7 +161,7 @@ displayTemples(temples);
 // Navigation filtering function
 function setupFilters() {
   // selecting all buttons that have a data-filter attribute
-  const buttons = document.querySelectorAll("button[data-filter]");
+  const buttons = document.querySelectorAll("a[data-filter]");
 
   // adding a click listener to each button
   buttons.forEach(btn => {
