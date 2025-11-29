@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Ssali Arafat | form html page for week05 assignment project">
+    <meta name="author" content="Ssali Arafat">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+       <h1>Product Review</h1>
+    </header>
+
+  <main>
+     <form method="get" action="review.html">
+
+            <fieldset>
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option disabled selected value="">Select a Product ...</option>
+            </select>
+            </fieldset>
+            
+                <legend>Overall Rating</legend>
+
+                <label>
+                    <input type="radio" name="rating" value="1" required> ☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="2" required> ☆☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="3" required> ☆☆☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="4" required> ☆☆☆☆
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="5" required> ☆☆☆☆☆
+                </label>
+
+
+            <fieldset>
+            <label for="install">Date of Installation</label>
+            <input type="date" id="install" name="install" required>
+            </fieldset>
+
+    
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <legend>(Check all that apply)</legend>
+                <label>
+                    <input type="checkbox" name="feature" value="Durable"> Durablility
+                </label>
+
+                <label>
+                    <input type="checkbox" name="feature" value="Easy Install"> Easy of Use
+                </label>
+
+                <label>
+                    <input type="checkbox" name="feature" value="Energy Saving"> Performance
+                </label>
+
+                <label>
+                    <input type="checkbox" name="feature" value="Affordable"> Design
+                </label>
+            </fieldset>
+
+            <fieldset>
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+            </fieldset>
+     </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Ssali Arafat | Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
