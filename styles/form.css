@@ -49,6 +49,11 @@ input[type="submit"]:hover {
 label {
     width: 100%;
 }
+input[type="date"] {
+    display: block;
+    width: 92%;
+    padding: 0.8rem;
+}
 input[type="radio"] {
     height: 15px;
     width: 30px;
