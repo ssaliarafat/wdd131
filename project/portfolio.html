@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+        content="Fifth Version VFX Studio Portfolio">
+  <meta name="author" content="Ssali Arafat">
+  <title>Portfolio — Fifth Version</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/version.css">
+  <script src="scripts/version.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">5th Version Media</a>
+      <button id="btn-hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Portfolio</h1>
+
+    <!-- filters to all / vfx / compositing / cgi -->
+    <div class="filters">
+      <button data-filter="all" class="filter active">All</button>
+      <button data-filter="vfx" class="filter">VFX</button>
+      <button data-filter="comp" class="filter">Compositing</button>
+      <button data-filter="cgi" class="filter">CGI</button>
+    </div>
+
+    <!-- portfolio grid to be populated by JS -->
+    <section id="portfolio-grid" class="portfolio-grid" aria-live="polite">
+      <!-- cards injected by main.js -->
+    </section>
+
+    <!-- modal for large view -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button id="modal-close" class="modal-close" aria-label="Close">✖</button>
+        <img id="modal-img" src="" alt="">
+        <div id="modal-caption"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Fifth Version VFX Studio — Uganda</p>
+      <img src="images/icon.png" width="120px" height="110" alt="fifth version icon">
+    </div>
+  </footer>
+</body>
+</html>
